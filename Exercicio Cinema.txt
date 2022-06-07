@@ -1,0 +1,25 @@
+lugares = int((input("Digite a quantidade de lugares: "))) 
+
+cinema = [] 
+
+for i in range(lugares): 
+    cinema.append(i+1)
+print(cinema)
+
+assento= int(input("\n\nEscolha um lugar disponível: ")) 
+
+
+while (cinema[i] == lugares):
+
+    for i in range(lugares): 
+        if (assento == cinema[i]):
+            cinema[i] = 'X'
+            if cinema[i] == 'X':
+                print(cinema)
+
+    print("Assento",assento, "Selecionado") 
+
+    print("\n", cinema)
+    assento= int(input("Escolher um lugar disponivel: ")) 
+
+print("\nTodos os lugares foram selecionados, peguem suas pipocas e bebidas a sessão ira iniciar!") 
